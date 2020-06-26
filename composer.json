@@ -1,0 +1,34 @@
+{
+    "name": "dazzlesoftware/entities",
+    "type": "library",
+    "description": "Dazzle Entity Project",
+    "keywords": ["dazzle", "framework", "entity"],
+    "homepage": "https://github.com/dazzle-framework/entities",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^7.3.0",
+        "dazzlesoftware/database": "^1.0",
+        "dazzlesoftware/string": "^1.0",
+        "doctrine/inflector": "~1.2",
+        "dazzlesoftware/event": "^1.0",
+        "nesbot/carbon": "~1.29"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/test": "^1.0",
+        "phpunit/phpunit": "^9.0",
+        "phpunit/dbunit": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Entity\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Entity\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {}
+}
